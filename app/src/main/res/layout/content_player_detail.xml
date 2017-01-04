@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_player_detail"
+    tools:context="com.teplus.thaipremierleague.PlayerDetail">
+
+    <LinearLayout
+        android:id="@+id/bgPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPlayerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PlayerName"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPlayerNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Number"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bgPlayer"
+        android:background="#FFF"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtClubName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tab_left"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="@dimen/margin_tab_top"
+                        android:text="Club" />
+
+                    <TextView
+                        android:id="@+id/txtSetClubName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_tab_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tab_left"
+                        android:layout_marginRight="4dp"
+                        android:text="Position" />
+
+                    <TextView
+                        android:id="@+id/txtSetPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_tab_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtNationality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tab_left"
+                        android:layout_marginRight="4dp"
+                        android:text="Nationality" />
+
+                    <TextView
+                        android:id="@+id/txtSetNationality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_tab_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBirthDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tab_left"
+                        android:layout_marginRight="4dp"
+                        android:text="BirthDate" />
+
+                    <TextView
+                        android:id="@+id/txtSetBirthDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_tab_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tab_left"
+                        android:layout_marginRight="4dp"
+                        android:text="Height" />
+
+                    <TextView
+                        android:id="@+id/txtSetHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="..." />
+
+                    <TextView
+                        android:id="@+id/txtCentermeter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="cm" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_tab_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtGoals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tab_left"
+                        android:layout_marginRight="4dp"
+                        android:text="Goals" />
+
+                    <TextView
+                        android:id="@+id/txtSetGoals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="..." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

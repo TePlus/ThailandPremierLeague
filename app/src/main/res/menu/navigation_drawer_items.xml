@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nav_home"
+            android:fontFamily="roboto"
+            android:textStyle="normal"
+            android:title="Home"></item>
+
+        <item
+            android:id="@+id/nav_fixtures"
+            android:fontFamily="roboto"
+            android:textStyle="normal"
+            android:title="Fixtures"></item>
+
+        <item
+            android:id="@+id/nav_table"
+            android:fontFamily="roboto"
+            android:textStyle="normal"
+            android:title="Table"></item>
+
+        <item
+            android:id="@+id/nav_top_scores"
+            android:fontFamily="roboto"
+            android:textStyle="normal"
+            android:title="Top Scores"></item>
+
+        <item
+            android:id="@+id/nav_hilight"
+            android:fontFamily="roboto"
+            android:textStyle="normal"
+            android:title="Hilight"></item>
+
+    </group>
+
+</menu>
